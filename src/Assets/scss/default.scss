@@ -1,0 +1,96 @@
+@import "_config.scss";
+
+header{
+    position: relative;
+    display: block;
+    width: 100%;
+    background: $darkGrey;
+    color: $white;
+    height: 70px;
+    .Logo{
+        position: absolute;
+        top:50%; left:15px;
+        @include translateY(-50%);
+    }
+    nav,
+    nav ul,
+    nav ul li{
+        margin: 0;
+        padding: 0;
+    }
+    nav{
+        position: absolute;
+        top:50%; right: 15px;
+        @include translateY(-50%);
+
+        ul li{
+            list-style-type: none;
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        &.last{
+            margin: 0;
+        }
+        a{
+            font-size: 19px;
+            line-height: normal;
+        }
+    }
+}
+
+footer{
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 95%;
+    background: $darkGrey;
+    color: $white;
+
+}
+
+.data{
+    display: block;
+    position: relative;
+    padding: 20px;
+    a{
+        padding: 10px;
+        margin: 10px;
+    }
+
+}
+homepage{
+    display: block;
+    position: relative;
+    padding: 20px;
+}
+sensor{
+    display: block;
+    position: relative;
+    padding: 20px;
+}
+contact{
+    display: block;
+    position: relative;
+    padding: 20px;
+}
+
+data{
+    display: block;
+    position: relative;
+    width: 50%;
+    height: 50%;
+    padding: 20px;
+}
+levelsensor{
+    display: block;
+    position: relative;
+    padding: 20px;
+
+}
+soilSensor{
+    display: block;
+    position: relative;
+    padding: 20px;
+}
